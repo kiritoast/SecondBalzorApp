@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{909BD99C-58DC-4285-A357-B0521CB14988}|https">
+  <MonoDevelop.Ide.ItemProperties.SecondBalzorApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecondBalzorApp/Pages/Splitter.razor">
+    <Files>
+      <File FileName="SecondBalzorApp/Pages/ChartForProduct.razor" />
+      <File FileName="SecondBalzorApp/Shared/NavMenu.razor" />
+      <File FileName="SecondBalzorApp/wwwroot/css/site.css" />
+      <File FileName="SecondBalzorApp/_Imports.razor" />
+      <File FileName="SecondBalzorApp/Data/WeatherForecastService.cs" />
+      <File FileName="SecondBalzorApp/Program.cs" />
+      <File FileName="SecondBalzorApp/Pages/_Host.cshtml" />
+      <File FileName="SecondBalzorApp/Pages/Index.razor" />
+      <File FileName="SecondBalzorApp/App.razor" />
+      <File FileName="SecondBalzorApp/appsettings.json" />
+      <File FileName="SecondBalzorApp/TodoItem.cs" />
+      <File FileName="SecondBalzorApp/Pages/Todo.razor" />
+      <File FileName="SecondBalzorApp/Shared/EventConsole.razor" />
+      <File FileName="SecondBalzorApp/Shared/SurveyPrompt.razor" />
+      <File FileName="SecondBalzorApp/Pages/Github.razor" />
+      <File FileName="SecondBalzorApp/Pages/splitter.razor" Line="28" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SecondBalzorApp" expanded="True">
+            <Node name="SecondBalzorApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Splitter.razor" selected="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

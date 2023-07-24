@@ -1,0 +1,21 @@
+﻿@using Data
+@inject ModelService modelService
+
+
+<RadzenGrid TItem="Model" Data="@ModelData">
+    <Columns>
+        <RadzenGridColumn TItem="Model" Property="Name" Title="Name" />
+        <RadzenGridColumn TItem="Model" Property="Description" Title="Description" />
+    </Columns>
+</RadzenGrid>
+
+@code {
+    private List<Model> ModelData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ModelData = modelService.GetModels(4);
+    }
+
+}
+

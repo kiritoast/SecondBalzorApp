@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Radzen.Blazor" Version="4.13.5" />
+    <PackageReference Include="MudBlazor" Version="6.7.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="7.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+    <PackageReference Include="ClassToRecord.Analyzer" Version="1.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Data\DTO\" />
+    <None Remove="Pages\DashboardComponet\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\DTO\" />
+    <Folder Include="Pages\DashboardComponet\" />
+  </ItemGroup>
+</Project>

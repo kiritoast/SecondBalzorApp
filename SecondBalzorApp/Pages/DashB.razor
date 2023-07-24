@@ -1,0 +1,44 @@
+﻿@page "/"
+
+<h3>Dashboard</h3>
+<!-- Showing the progress -->
+<div class="row">
+    <div class="col-md-8">
+        <RadzenCard style="border: 1px solid #ccc; border-radius: 5px; margin: 15px;display: flex;">
+            <TodayProgress />
+            <YesterdayProgress />
+
+        </RadzenCard>
+    </div>
+    <div class="col-md-4">
+        <RadzenCard style="border: 1px solid #ccc; border-radius: 5px; margin: 15px;">
+
+            <h3>Yesterday</h3>
+            <SecondBalzorApp.Pages.DashboardComponet.SEEQ_Table />
+
+        </RadzenCard>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <RadzenCard style="border: 1px solid #ccc; border-radius: 5px; margin: 5px;">
+            <SecondBalzorApp.Pages.DashboardComponet.SEEQ_Table />
+        </RadzenCard>
+    </div>
+    <div class="col-md-4">
+        <RadzenCard style="border: 1px solid #ccc; border-radius: 5px; margin: 15px;">
+            <h4>Profit</h4>
+        </RadzenCard>
+    </div>
+    <div class="col-md-4">
+        <RadzenCard style="border: 1px solid #ccc; border-radius: 5px; margin: 15px;">
+            <h4>Expenses</h4>
+        </RadzenCard>
+    </div>
+</div>
+
+@code {
+    bool first = true;
+
+}

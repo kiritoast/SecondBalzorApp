@@ -1,0 +1,26 @@
+﻿@using Data
+@inject DPGService dpg;
+<!--this is the chart for actual and goal comparison-->
+        <RadzenChart Style="height: 300px;">
+            <RadzenValueAxis Min="0" Max="100" Step="100">
+                <RadzenGridLines Visible="true" />
+            </RadzenValueAxis>
+            <RadzenStackedBarSeries Data="@GOAL" CategoryProperty="STAGE" Title="Actual" LineType="LineType.Dashed" ValueProperty="Revenue">
+                <RadzenSeriesDataLabels Visible="true" />
+            </RadzenStackedBarSeries>
+            <RadzenStackedBarSeries Data="@ACTUAL" CategoryProperty="STAGE" Title="Goal" ValueProperty="Revenue">
+                <RadzenSeriesDataLabels Visible="true" />
+            </RadzenStackedBarSeries>
+            <RadzenBarOptions Radius="5" />
+            <RadzenLegend Visible="false" />
+        </RadzenChart>
+@code {
+    DataItem[] GOAL = new DataItem[] { };
+    DataItem[] ACTUAL = new DataItem[] { };
+    protected override void OnInitialized()
+    {
+        GOAL = dpg.GetGoalData();
+        ACTUAL = dpg.GetActualData();
+    }
+
+}
